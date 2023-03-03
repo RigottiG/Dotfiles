@@ -1,0 +1,12 @@
+[user]
+	name = Guilherme Rigotti
+	email = ggrigotti@gmail.com
+[credential]
+	helper = osxkeychain
+[core]
+	excludesFile = /Users/guilhermerigotti/.gitignore
+	editor = nvim
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
