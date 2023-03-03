@@ -20,6 +20,7 @@
 	cp = cherry-pick
 	br = branch
 	co = checkout
+	con = checkout -b
 	df = diff -C --color-words
 	pl = !git pull --rebase origin $(git cb)
 	ps = !git push origin $(git cb)
