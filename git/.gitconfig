@@ -41,5 +41,6 @@
 	delete-tag = "!f() { git tag -d $1; git push origin :refs/tags/$1; }; f"
 	info = !sh -c 'git-info' -    # requires https://github.com/gitbits/git-info
 	submodule-list = !git ls-files --stage | grep 16000
+	amend = commit -a --amend
 [color]
 	ui = true
