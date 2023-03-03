@@ -7,7 +7,7 @@
 	excludesFile = /Users/guilhermerigotti/.gitignore
 	editor = nvim
 [push]
-  default = upstream
+  	default = upstream
 [init]
 	defaultBranch = main
 [alias]
