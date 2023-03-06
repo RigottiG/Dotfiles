@@ -39,3 +39,8 @@ if test -f $LOCAL_CONFIG
 end
 
 starship init fish | source
+
+# pnpm
+set -gx PNPM_HOME "/Users/guilhermerigotti/Library/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end
