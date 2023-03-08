@@ -1,15 +1,7 @@
-------------------------------------------------
---                                            --
---    This is a main configuation file for    --
---                    EcoVim                  --
---      Change variables which you need to    --
---                                            --
-------------------------------------------------
-
 local icons = require('utils.icons')
 
 EcoVim = {
-  colorscheme = 'tokyonight',
+  colorscheme = 'catppuccin',
   ui = {
     float = {
       border = 'rounded'

@@ -1,16 +1,27 @@
 return {
   -- Themes
   {
-    "folke/tokyonight.nvim",
+    "catppuccin/nvim",
+    name = "catppuccin",
     lazy = false,
     priority = 1000,
     config = function()
       -- load the colorscheme here
-      vim.cmd([[colorscheme tokyonight]])
-      require("config.colorscheme")
-    end,
+      vim.cmd([[colorscheme catppuccin]])
+      require("config.catppuccin")
+    end
   },
-
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     -- load the colorscheme here
+  --     vim.cmd([[colorscheme tokyonight]])
+  --     require("config.tokyonight")
+  --   end,
+  -- },
+  --
   { "nvim-lua/plenary.nvim" },
   {
     "nvim-tree/nvim-web-devicons",
@@ -483,4 +494,6 @@ return {
       vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true })
     end
   },
+
+  { "wakatime/vim-wakatime", lazy = false }
 }
