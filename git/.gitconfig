@@ -45,3 +45,5 @@
 	amend = commit -a --amend
 [color]
 	ui = true
+[pull]
+	rebase = false

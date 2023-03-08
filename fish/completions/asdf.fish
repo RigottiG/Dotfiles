@@ -1,1 +1,0 @@
-/Users/guilhermerigotti/.asdf/completions/asdf.fish
