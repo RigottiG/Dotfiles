@@ -3,8 +3,6 @@
 
 local gl = require('galaxyline')
 local condition = require('galaxyline.condition')
-local utils = require('utils')
-local catppuccin_colors = require("catppuccin.palettes").get_palette "macchiato"
 local package_info_present, package = pcall(require, 'package-info')
 
 -- Configuration {{{1

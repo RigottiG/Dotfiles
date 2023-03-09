@@ -1,27 +1,33 @@
 local present, catppuccin = pcall(require, "catppuccin")
 if not present then
-  return
+	return
 end
-
 
 -- ╭──────────────────────────────────────────────────────────╮
 -- │ Setup Colorscheme                                        │
 -- ╰──────────────────────────────────────────────────────────╯
 catppuccin.setup({
-   flavour = "macchiato", 
-    transparent_background = true,
-    term_colors = true,
-    integrations = {
-        cmp = true,
-        gitsigns = true,
-        nvimtree = true,
-        telescope = true,
-        notify = false,
-        mini = false,
-        treesitter = true,
-    },
+	flavour = "macchiato",
+	term_colors = false,
+	styles = {
+		comments = { "italic" },
+		conditionals = { "italic" },
+		keywords = { "italic" },
+		functions = { "bold" },
+	},
+	integrations = {
+		barbar = true,
+		gitsigns = true,
+		treesitter = true,
+		ts_rainbow = true,
+		treesitter_context = true,
+		lightspeed = true,
+		mason = true,
+		mini = true,
+		neotest = true,
+		cmp = true,
+		nvimtree = true,
+		telescope = true,
+		which_key = true,
+	},
 })
-
--- Set Colorscheme
-vim.cmd('colorscheme ' .. EcoVim.colorscheme)
-

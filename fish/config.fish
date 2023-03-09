@@ -23,6 +23,7 @@ set -gx EDITOR nvim
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
+set -gx PATH ~/.cargo/bin $PATH
 
 switch (uname)
   case Darwin
