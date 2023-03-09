@@ -27,6 +27,7 @@ return {
 		"Shatur/neovim-ayu",
 		name = "ayu",
 		lazy = false,
+    enabled = false,
 		priority = 1000,
 		config = function()
 			-- load the colorscheme here
