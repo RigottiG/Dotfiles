@@ -8,7 +8,7 @@ return {
 		config = function()
 			-- load the colorscheme here
 			vim.cmd([[colorscheme gruvbox]])
-			require("config.gruvbox")
+			require("config.colorscheme.gruvbox")
 		end,
 	},
 	{
@@ -32,7 +32,7 @@ return {
 		config = function()
 			-- load the colorscheme here
 			vim.cmd([[colorscheme ayu]])
-			require("config.ayu")
+			require("config.colorscheme.ayu")
 		end,
 	},
 	{
@@ -43,7 +43,7 @@ return {
 		config = function()
 			-- load the colorscheme here
 			vim.cmd([[colorscheme tokyonight]])
-			require("config.tokyonight")
+			require("config.colorscheme.tokyonight")
 		end,
 	},
 
