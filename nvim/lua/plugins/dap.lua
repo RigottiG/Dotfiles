@@ -22,7 +22,6 @@ dap_vt.setup({
 	only_first_definition = true, -- only show virtual text at first definition (if there are multiple)
 	all_references = false, -- show virtual text on all all references of the variable (not only definitions)
 	filter_references_pattern = "<module", -- filter references (not definitions) pattern when all_references is activated (Lua gmatch pattern, default filters out Python modules)
-
 	-- Experimental Features:
 	virt_text_pos = "eol", -- position of virtual text, see `:h nvim_buf_set_extmark()`
 	all_frames = false, -- show virtual text for all stack frames not only current. Only works for debugpy on my machine.
@@ -132,7 +131,7 @@ keymap("n", "<Leader>dt", "<CMD>lua require('dap').terminate()<CR>", opts)
 -- ╭──────────────────────────────────────────────────────────╮
 -- │ Adapters                                                 │
 -- ╰──────────────────────────────────────────────────────────╯
--- NODE / TYPESCRIPT
+-- NODE
 dap.adapters.node2 = {
 	type = "executable",
 	command = "node",
@@ -197,5 +196,16 @@ dap.configurations.typescriptreact = {
 		protocol = "inspector",
 		port = 9222,
 		webRoot = "${workspaceFolder}",
+	},
+	{
+		name = "React Native",
+		type = "node2",
+		request = "attach",
+		program = "${file}",
+		cwd = vim.fn.getcwd(),
+		sourceMaps = true,
+		protocol = "inspector",
+		console = "integratedTerminal",
+		port = 35000,
 	},
 }
