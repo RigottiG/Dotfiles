@@ -152,6 +152,9 @@ return {
 	{
 		"hrsh7th/nvim-cmp",
 		event = "InsertEnter",
+    config = function()
+      require("plugins.cmp")
+    end,
 		dependencies = {
 			"hrsh7th/cmp-nvim-lua",
 			"hrsh7th/cmp-nvim-lsp",
@@ -176,9 +179,6 @@ return {
 				end,
 			},
 		},
-		config = function()
-			require("plugins.cmp")
-		end,
 	},
 
 	-- LSP Addons
